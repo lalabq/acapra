@@ -1,0 +1,20 @@
+.divisao-doacoes{
+    background-color: var(--primaria);
+    text-align: center;
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+}
+
+.divisao-doacoes p {
+    color: white;
+}
+
+.divisao-doacoes .imagem {
+    width: 40%;
+    height: 400px;
+
+    object-fit: contain; /*mantem imagem inteira*/
+
+    /* object-fit: cover; */ /* cobre tudo mas corta os cantos */
+}
