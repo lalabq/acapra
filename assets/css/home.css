@@ -28,6 +28,13 @@
     align-items: center;
     justify-content: flex-end;
     position: relative;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.card:hover {
+    background-color: var(--primaria-especial);
+   
 }
 
 .card img {
@@ -44,14 +51,29 @@
 }
 
 .banner-2 {
-    background-color: var(--primaria-especial);
     position: relative;
     padding: 64px 32px 128px 32px;
     color: #fff;
     text-align: center;
+    position: relative;
 }
 
-.banner-2::before {
+.banner-2 .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-2 .back {
+    background-color: #7875a4;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-2 .back::before {
     content: "";
     position: absolute;
     top: 0;
@@ -59,8 +81,8 @@
     right: 0;
     bottom: 0;
     background-image: url('../images/banner-2.png');
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     opacity: 0.2;
     pointer-events: none;
     z-index: 0;
@@ -69,6 +91,10 @@
 .banner-2 .title p {
     text-transform: uppercase;
     font-size: 1.25rem;
+}
+.banner-2 .title p:last-of-type {
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 .banner-2 .statistics {
@@ -84,6 +110,25 @@
 .banner-2 .statistic span {
     font-size: 5rem;
     font-weight: 600;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.banner-2 .statistic span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background: #fff; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-2 .statistic p {
+    font-size: 1.5rem;
+    max-width: 220px;
+    margin: 12px auto 0 auto;
 }
 
 @media (max-width: 700px) {
@@ -95,6 +140,29 @@
         width: 30%;
     }
     .card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner-2 {
+        padding: 32px;
+    }
+    .banner-2 .title p {
+        font-size: 1rem;
+    }
+    .banner-2 .title p:last-of-type {
+        font-size: 1rem;
+    }
+    .banner-2 .statistics {
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 48px;
+    }
+    .banner-2 .statistic span {
+        font-size: 3rem;
+    }
+    .banner-2 .statistic p {
         font-size: 1rem;
     }
 }
