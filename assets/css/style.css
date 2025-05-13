@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -14,6 +15,62 @@
 
 body {
     background-color: var(--cinza);
+}
+
+.cabecalho .div-titulo {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    background-color: var(--primaria-especial);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cabecalho .div-subtitulo {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: var(--primaria);
+    text-align: center;
+    justify-content: center;
+    align-items: center
+}
+
+.container-imagens {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.img-cachorro {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+}
+
+.img-gato {
+    top: 20px;
+    left: 60px;
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+
+.cabecalho .div-titulo h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.cabecalho .div-subtitulo h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 Contato
@@ -118,4 +175,3 @@ Contato
 
 
 }
-
