@@ -16,3 +16,37 @@
 body {
     background-color: var(--cinza);
 }
+
+.cabecalho .div-titulo {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    background-color: var(--primaria);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cabecalho .div-subtitulo {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: var(--primaria-especial);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.cabecalho .div-titulo h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.cabecalho .div-subtitulo h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
