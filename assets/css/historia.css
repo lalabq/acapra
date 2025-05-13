@@ -3,3 +3,18 @@ header.cabecalho {
     height: 92px;
     background-color: white;
 }
+
+.nossa-historia {
+    width: 100%;
+    padding: 100px;
+}
+
+.nossa-historia .corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nossa-historia .corpo .miolo {
+    max-width: 500px;
+}
