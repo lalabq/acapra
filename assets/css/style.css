@@ -21,8 +21,7 @@ body {
     height: 120px;
     width: 100%;
     display: flex;
-    background-color: var(--primaria);
-    text-align: center;
+    background-color: var(--primaria-especial);
     justify-content: center;
     align-items: center;
     color: white;
@@ -32,11 +31,34 @@ body {
     height: 50px;
     width: 100%;
     display: flex;
-    background-color: var(--primaria-especial);
+    background-color: var(--primaria);
     text-align: center;
     justify-content: center;
-    align-items: center;
-    color: white;
+    align-items: center
+}
+
+.container-imagens {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.img-cachorro {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+}
+
+.img-gato {
+    top: 20px;
+    left: 60px;
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 80px;
 }
 
 
