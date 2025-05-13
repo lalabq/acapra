@@ -1,0 +1,83 @@
+.div-titulo {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    background-color: var(--primaria);
+    text-align: center;
+    justify-content: center;
+    align-items: center
+}
+
+.div-subtitulo {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: var(--primaria-especial);
+    text-align: center;
+    justify-content: center;
+    align-items: center
+}
+
+.div-titulo h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.div-subtitulo h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.section-noticias {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.card {
+    width: 20%;
+    border: 0, solid, black;
+    border-radius: 15px;
+    margin: 30px;
+    background-color: white;
+    box-shadow: 0px 5px 5px grey;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 10px grey;
+}
+
+.card img {
+    height: 180px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card h2 {
+    font-size: 18px;
+    color: var(--primaria);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.card p {
+    font-size: 12px;
+    padding: 10px 10px 25px 10px;
+    text-align: justify;
+}
+
+.card a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: grey;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.card a:hover {
+    color: var(--primaria);
+}
