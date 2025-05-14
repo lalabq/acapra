@@ -1,0 +1,96 @@
+.fundo {
+   
+    color: #fff;
+    text-align: center;
+}
+.titulo-ctt {
+    background-color: var(--primaria-especial);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo-ctt h1 {
+    font-size: 40px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titulo-ctt img {
+    width: 200px;
+    height: auto;
+}
+.texto {
+    background-color: var(--primaria);
+    padding: 15px 20px;
+}
+.texto p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.contato {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background-color: #fff;
+    margin-top: 60px;
+}
+.formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 30px;
+}
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+.formulario textarea {
+    min-height: 120px;
+    resize: none;
+}
+.formulario button {
+    background-color: #fff;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contato {
+      background-color: var(--primaria-especial);
+}
+.infos-contato {
+    flex: 1;
+    position:  relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    gap: 40px;
+}
+.infos-contato img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.pegadas img {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 200px;
+    height: auto;
+    background-position: right top;
+}
