@@ -167,7 +167,7 @@
     }
 }
 
-/* Início: Depoimentos */
+/* Início: depoimentos */
 .testimonials {
     position: relative;
     margin: 160px auto;
@@ -258,3 +258,13 @@
     }
 }
 /* Fim: depoimentos */
+
+/* Início: banner sobre maus-tratos */
+.cabecalho h2, .cabecalho p {
+    text-transform: uppercase;
+}
+.danger {
+    background: #FB5E61;
+    border-radius: 8px;
+}
+/* Fim: banner sobre maus-tratos */
