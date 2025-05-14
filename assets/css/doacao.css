@@ -38,27 +38,27 @@
 }
 
 .divisao-doacoes .parte-roxa .patinhas .pata.pata-1 {
-    left: 15px;
-    top: 20px;
+    left: 7px;
+    top: 5px;
 }
 
 .divisao-doacoes .parte-roxa .patinhas .pata.pata-2 {
-    left: 105px;
-    top: 42px;
+    left: 88px;
+    top: 24px;
 }
 
 .divisao-doacoes .parte-roxa .patinhas .pata.pata-3 {
-    right: 95px;
-    bottom: 45px;
+    right: 90px;
+    bottom: 38px;
 }
 
 .divisao-doacoes .parte-roxa .patinhas .pata.pata-4 {
     right: 10px;
-    bottom: 20px;
+    bottom: 17px;
 }
 
 .divisao-doacoes p {
-    color: white;
+    color: white;  
 }
 
 .divisao-doacoes h1 {
@@ -67,6 +67,27 @@
     font-size: 50px;
 }
 
+.divisao-doacoes .parte-roxa .pix {
+    display: flex;
+    justify-content: center;
+}
+
+.divisao-doacoes h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 70px;
+}
+
+.divisao-doacoes .parte-roxa .text .pp {
+    font-size: 24px;
+    display: flex;
+    white-space: normal;
+    width: 800px;
+    justify-content: center;
+}
 
 .divisao-doacoes .text {
     color: white;
@@ -128,6 +149,23 @@
     padding: 50px 200px;
     font-size: 25px;
 
+}
+
+.divisao-doacoes .parte-roxa .logo {
+    pointer-events: none;
+}
+
+.divisao-doacoes .parte-roxa .logo .logop {
+    position: absolute;
+}
+
+.divisao-doacoes .parte-roxa .logo .logop img {
+    height: 70px;
+}
+
+.divisao-doacoes .parte-roxa .logo .logop.logo-pix {
+    left: 376px;
+    top: 175px;
 }
 
 .divisao-doacoes .parte-clara .lista ul li {
