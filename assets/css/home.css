@@ -260,11 +260,48 @@
 /* Fim: depoimentos */
 
 /* Início: banner sobre maus-tratos */
-.cabecalho h2, .cabecalho p {
+.mistreatment h2, .mistreatment p {
     text-transform: uppercase;
+    text-align: center;
 }
-.danger {
+.mistreatment h2 {
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+}
+.mistreatment p {
+    font-size: 1rem;
+}
+.mistreatment li {
+    text-align: start;
+    color: #fff;
+    font-weight: 300;
+}
+.mistreatment .danger {
     background: #FB5E61;
     border-radius: 8px;
+    padding: 0 4px;
+}
+.mistreatment .div-titulo {
+    flex-direction: column;
+    height: auto;
+    padding: 24px;
+    gap: 32px;
+}
+.mistreatment .div-subtitulo {
+    flex-direction: column;
+    height: auto;
+    padding: 24px;
+    gap: 16px;
+}
+@media (max-width: 900px) {
+    .mistreatment h2 {
+        font-size: 1.25rem !important;
+    }
+    .mistreatment p {
+        font-size: 1rem !important;
+    }
+    .mistreatment li {
+        font-size: 0.75rem !important;
+    }
 }
 /* Fim: banner sobre maus-tratos */
