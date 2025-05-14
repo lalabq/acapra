@@ -42,10 +42,12 @@
 }
 .formulario {
     flex: 1;
+    width: 600px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-right: 30px;
+    margin-left: 20px;
 }
 .formulario input,
 .formulario textarea {
