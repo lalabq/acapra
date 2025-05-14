@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +7,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
 </head>
-
 <body>
     <main>
-        <img class="banner" src="assets/images/banner.png" alt="Cachorro deitado">
+        <div class="banner"></div>
     
         <div class="buttons-cards">
             <a class="card" href="doacao.html">
-                <img src="assets/images/icon-dog.svg" alt="Cachorro">
+                <img src="assets/images/icons/dog-1.svg" alt="Cachorro">
                 <p>Quero adotar</p>
             </a>
             <a class="card" href="doacao.html">
-                <img src="assets/images/icon-money.svg" alt="Sacola de dinheiro">
+                <img src="assets/images/icons/money.svg" alt="Sacola de dinheiro">
                 <p>Quero ajudar</p>
             </a>
             <a class="card" href="contato.html">
-                <img src="assets/images/icon-cat.svg" alt="Gato">
+                <img src="assets/images/icons/cat-1.svg" alt="Gato">
                 <p>Quero participar de uma feirinha</p>
             </a>
         </div>
@@ -102,14 +100,13 @@
     </main>
 </body>
 <script>
-    // Na versão mobile, iniciar scroll dos depoimentos no centro
-
-    const testimonials = document.querySelector('.testimonials .wrapper');
+    function scrollMiddleTestimonialsOnMobile() {
+        const testimonials = document.querySelector('.testimonials .wrapper');
+        testimonials.scrollLeft = (testimonials.scrollWidth - testimonials.clientWidth) / 2;
+    }
 
     window.addEventListener('load', () => {
-        testimonials.scrollLeft = (testimonials.scrollWidth - testimonials.clientWidth) / 2;
+        scrollMiddleTestimonialsOnMobile();
     });
-
 </script>
-
 </html>

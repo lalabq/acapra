@@ -1,7 +1,10 @@
-.banner {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
+ .banner {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/banners/banner-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Início: buttons cards */
@@ -97,7 +100,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../images/banner-2.png');
+    background-image: url('../images/banners/banner-2.png');
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -178,7 +181,7 @@
     margin: 160px auto;
 }
 .testimonials::before, .testimonials::after {
-    background-image: url("../images/line.svg");
+    background-image: url("../images/icons/line.svg");
     content: "";
     position: absolute;
     left: 50%;
