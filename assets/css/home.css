@@ -4,6 +4,7 @@
     display: block;
 }
 
+/* Início: buttons cards */
 .buttons-cards {
     display: flex;
     gap: 60px;
@@ -13,6 +14,7 @@
 }
 
 .buttons-cards .card {
+    text-decoration: none;
     flex: 1;
     max-width: 400px;
     width: 100%;
@@ -50,9 +52,24 @@
     text-align: right;
 }
 
+@media (max-width: 700px) {
+    .buttons-cards {
+        flex-direction: column;
+        margin: 64px 32px;
+    }
+    .buttons-cards .card img {
+        width: 30%;
+    }
+    .buttons-cards .card p {
+        font-size: 1rem;
+    }
+}
+/* Fim: buttons cards */
+
+/* Início: banner com dados de doações */
 .banner-2 {
     position: relative;
-    padding: 64px 32px 128px 32px;
+    padding: 48px 32px 64px 32px;
     color: #fff;
     text-align: center;
     position: relative;
@@ -90,15 +107,15 @@
 
 .banner-2 .title p {
     text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 .banner-2 .title p:last-of-type {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-top: 1rem;
 }
 
 .banner-2 .statistics {
-    margin-top: 128px;
+    margin-top: 96px;
     display: flex;
     gap: 144px;
 }
@@ -110,7 +127,7 @@
 .banner-2 .statistic span {
     font-size: 5rem;
     font-weight: 600;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     position: relative;
 }
 
@@ -129,19 +146,6 @@
     font-size: 1.5rem;
     max-width: 220px;
     margin: 12px auto 0 auto;
-}
-
-@media (max-width: 700px) {
-    .buttons-cards {
-        flex-direction: column;
-        margin: 64px 32px;
-    }
-    .buttons-cards .card img {
-        width: 30%;
-    }
-    .buttons-cards .card p {
-        font-size: 1rem;
-    }
 }
 
 @media (max-width: 900px) {
@@ -166,6 +170,7 @@
         font-size: 1rem;
     }
 }
+/* Fim: banner com dados de doações */
 
 /* Início: depoimentos */
 .testimonials {
@@ -193,7 +198,7 @@
     text-transform: uppercase;
     color: var(--primaria);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 32px
 }
@@ -236,6 +241,10 @@
     font-weight: 600;
 }
 @media (max-width: 900px) {
+    .testimonials {
+        position: relative;
+        margin: 100px auto;
+    }
     .testimonials h2 {
         font-size: 1.25rem;
     }
