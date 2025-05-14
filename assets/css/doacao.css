@@ -16,17 +16,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.divisao-doacoes .parte-clara {
-    width: 60%;
-    height: 100%;
+    position: relative;
 }
 
 .divisao-doacoes .parte-clara .titulo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.divisao-doacoes .parte-roxa .patinhas {
+    pointer-events: none;
+}
+
+.divisao-doacoes .parte-roxa .patinhas .pata {
+    position: absolute;
+}
+
+.divisao-doacoes .parte-roxa .patinhas .pata img {
+    height: 70px;
+}
+
+.divisao-doacoes .parte-roxa .patinhas .pata.pata-1 {
+    left: 15px;
+    top: 20px;
+}
+
+.divisao-doacoes .parte-roxa .patinhas .pata.pata-2 {
+    left: 105px;
+    top: 42px;
+}
+
+.divisao-doacoes .parte-roxa .patinhas .pata.pata-3 {
+    right: 95px;
+    bottom: 45px;
+}
+
+.divisao-doacoes .parte-roxa .patinhas .pata.pata-4 {
+    right: 10px;
+    bottom: 20px;
 }
 
 .divisao-doacoes p {
@@ -45,14 +73,9 @@
     font-size: 21px;
 }
 
-.divisao-doacoes .imagens {
-    width: 45%;
-    height: 400px;
-}
-
-.divisao-doacoes .imagens img {
+.divisao-doacoes .imagem img {
     width: 100%;
-    height: 30%;
+    height: 140px;
     right: 370px;
     object-fit: contain;
     /*mantem imagem inteira*/
@@ -63,6 +86,57 @@
 
 /*Formulario*/
 
+.divisao-doacoes .parte-clara {
+    width: 60%;
+    height: 100%;
+}
+
+.divisao-doacoes .parte-clara .formulario {
+    padding: 50px;
+    height: 50px;
+}
+
+.divisao-doacoes .parte-clara .formulario .linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.divisao-doacoes .parte-clara .formulario .link-formulario {
+    margin-left: 70px;
+}
+
+.divisao-doacoes .parte-clara .formulario .link-formulario a {
+    color: black;
+    font-size: 25px;
+    display: flex;
+    width: 330px;
+    word-break: break-all;
+    white-space: normal;
+}
+
 .divisao-doacoes h2 {
-    color: var(--primaria-especial)
+    color: var(--primaria-especial);
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.divisao-doacoes .parte-clara .lista {
+    color: var(--primaria-especial);
+    padding: 50px 200px;
+    font-size: 25px;
+
+}
+
+.divisao-doacoes .parte-clara .lista ul li {
+    width: 600px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.divisao-doacoes .parte-clara .lista ul li::marker {
+    content: '\f1b0';
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: 25px;
 }
