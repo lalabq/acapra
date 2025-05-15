@@ -1,9 +1,13 @@
-.banner {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
+ .banner {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/banners/banner-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* Início: buttons cards */
 .buttons-cards {
     display: flex;
     gap: 60px;
@@ -13,6 +17,7 @@
 }
 
 .buttons-cards .card {
+    text-decoration: none;
     flex: 1;
     max-width: 400px;
     width: 100%;
@@ -50,9 +55,24 @@
     text-align: right;
 }
 
+@media (max-width: 700px) {
+    .buttons-cards {
+        flex-direction: column;
+        margin: 64px 32px;
+    }
+    .buttons-cards .card img {
+        width: 30%;
+    }
+    .buttons-cards .card p {
+        font-size: 1rem;
+    }
+}
+/* Fim: buttons cards */
+
+/* Início: banner com dados de doações */
 .banner-2 {
     position: relative;
-    padding: 64px 32px 128px 32px;
+    padding: 48px 32px 64px 32px;
     color: #fff;
     text-align: center;
     position: relative;
@@ -80,7 +100,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../images/banner-2.png');
+    background-image: url('../images/banners/banner-2.png');
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -90,15 +110,15 @@
 
 .banner-2 .title p {
     text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 .banner-2 .title p:last-of-type {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-top: 1rem;
 }
 
 .banner-2 .statistics {
-    margin-top: 128px;
+    margin-top: 96px;
     display: flex;
     gap: 144px;
 }
@@ -110,7 +130,7 @@
 .banner-2 .statistic span {
     font-size: 5rem;
     font-weight: 600;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     position: relative;
 }
 
@@ -129,19 +149,6 @@
     font-size: 1.5rem;
     max-width: 220px;
     margin: 12px auto 0 auto;
-}
-
-@media (max-width: 700px) {
-    .buttons-cards {
-        flex-direction: column;
-        margin: 64px 32px;
-    }
-    .buttons-cards .card img {
-        width: 30%;
-    }
-    .buttons-cards .card p {
-        font-size: 1rem;
-    }
 }
 
 @media (max-width: 900px) {
@@ -166,6 +173,7 @@
         font-size: 1rem;
     }
 }
+/* Fim: banner com dados de doações */
 
 /* Início: depoimentos */
 .testimonials {
@@ -173,7 +181,7 @@
     margin: 160px auto;
 }
 .testimonials::before, .testimonials::after {
-    background-image: url("../images/line.svg");
+    background-image: url("../images/icons/line.svg");
     content: "";
     position: absolute;
     left: 50%;
@@ -193,7 +201,7 @@
     text-transform: uppercase;
     color: var(--primaria);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 32px
 }
@@ -236,6 +244,10 @@
     font-weight: 600;
 }
 @media (max-width: 900px) {
+    .testimonials {
+        position: relative;
+        margin: 100px auto;
+    }
     .testimonials h2 {
         font-size: 1.25rem;
     }
@@ -260,11 +272,48 @@
 /* Fim: depoimentos */
 
 /* Início: banner sobre maus-tratos */
-.cabecalho h2, .cabecalho p {
+.mistreatment h2, .mistreatment p {
     text-transform: uppercase;
+    text-align: center;
 }
-.danger {
+.mistreatment h2 {
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+}
+.mistreatment p {
+    font-size: 1rem;
+}
+.mistreatment li {
+    text-align: start;
+    color: #fff;
+    font-weight: 300;
+}
+.mistreatment .danger {
     background: #FB5E61;
     border-radius: 8px;
+    padding: 0 4px;
+}
+.mistreatment .div-titulo {
+    flex-direction: column;
+    height: auto;
+    padding: 24px;
+    gap: 32px;
+}
+.mistreatment .div-subtitulo {
+    flex-direction: column;
+    height: auto;
+    padding: 24px;
+    gap: 16px;
+}
+@media (max-width: 900px) {
+    .mistreatment h2 {
+        font-size: 1.25rem !important;
+    }
+    .mistreatment p {
+        font-size: 1rem !important;
+    }
+    .mistreatment li {
+        font-size: 0.75rem !important;
+    }
 }
 /* Fim: banner sobre maus-tratos */
