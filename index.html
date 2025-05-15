@@ -3,12 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acapra</title>
+    <title>Acapra | Home</title>
     <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header class="cabecalho">
+
+        <div class="divisoes">
+
+            <a href="index.html">
+                <div class="divisao divisao-logo">
+                    <img src="assets/images/logos/logo roxa 2.png" alt="Logo acapra">
+                    <span class="fonte-acapra color-primaria">
+                        ACAPRA
+                    </span>
+                </div>
+            </a>
+            
+
+            <div class="divisao divisao-navegacao">
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="link" href="historia.html">
+                                SOBRE NÓS
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="doacao.html">
+                                DOAÇÃO
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="index.html#denuncie">
+                                DENUNCIE
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="noticias.html">
+                                NOTÍCIAS
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="index.html#depoimentos">
+                                DEPOIMENTOS
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="divisao divisao-contato">
+                <a href="contato.html" class="btn btn-primario">
+                    Contato
+                </a>
+            </div>
+
+        </div>
+
+    </header>
     <main>
         <div class="banner"></div>
 
@@ -55,7 +111,7 @@
             </div>
         </div>
 
-        <div class="testimonials">
+        <div class="testimonials" id="depoimentos">
             <h2>Depoimentos de adoções</h2>
             <div class="wrapper">
                 <div class="card">
@@ -82,7 +138,7 @@
             </div>
         </div>
 
-        <section class="cabecalho mistreatment">
+        <section class="cabecalho mistreatment" id="denuncie">
             <div class="div-titulo">
                 <h2>Maus-tratos é <span class="danger">crime</span></h2>
                 <p>Você sabe o que pode ser considerado maus tratos aos animais?</p>

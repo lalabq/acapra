@@ -100,7 +100,7 @@ body {
 
 .btn.btn-primario {
     color: var(--primaria);
-    font-size: 24px;
+    font-size: 1rem;
     background-color: white;
     border-radius: 8px;
     border: 1px solid var(--primaria);
@@ -114,12 +114,21 @@ body {
     color: var(--primaria-especial-fraca);
 }
 
+header.cabecalho {
+    width: 100%;
+    background-color: white;
+}
+
 header.cabecalho .divisoes {
     width: 100%;
     height: 100%;
     display: flex;
     padding: 10px 10%;
     justify-content: center;
+}
+
+header.cabecalho .divisoes a {
+    text-decoration: none;
 }
 
 
@@ -157,7 +166,7 @@ header.cabecalho .divisoes .divisao-navegacao {
 header.cabecalho .divisoes .divisao-navegacao ul li a.link {
     color: var(--primaria);
     text-decoration: none !important;
-    font-size: 25px;
+    font-size: 1rem;
     transition: ease-in 200ms all;
 }
 
@@ -183,7 +192,7 @@ header.cabecalho .divisao.divisao-contato a.btn::after {
     color: var(--primaria);
     position: absolute;
     right: 10px;
-    top: 13px;
+    top: 9px;
     transition: ease-in 200ms all;
     font-size: 0px;
 }
