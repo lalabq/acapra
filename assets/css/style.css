@@ -192,3 +192,47 @@ header.cabecalho .divisao.divisao-contato a.btn:hover::after {
     font-size: 22px;
     color: var(--primaria-especial-fraca);
 }
+
+footer.footer  {
+    background-color: white;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer.footer .rodape{
+    border-top: solid var(--primaria) 1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: 300;
+    color: var(--primaria);
+}
+
+
+footer.footer .divisoes{
+    padding: 45px 0 0 0;
+    display: flex;
+    gap: 200px;
+}
+
+footer.footer .divisoes .divisao{
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+footer.footer .divisoes .divisao h4{
+    color: var(--primaria);
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+footer.footer .divisoes .divisao p{
+    color: var(--primaria);
+    line-height: 26px;
+    text-align: justify;
+}
