@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -10,7 +11,20 @@
 :root {
     --primaria: #555086;
     --primaria-especial: #686399;
+    --primaria-especial-fraca: #8e87c9;
     --cinza: #F1F1F1;
+}
+
+.fonte-acapra {
+    font-family: "Mirza", sans-serif;
+}
+
+.color-primaria {
+    color: var(--primaria);
+}
+
+.d-flex {
+    display: flex;
 }
 
 body {
@@ -71,4 +85,110 @@ body {
     color: white;
     font-size: 20px;
     font-weight: 300;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    position: relative;
+}
+
+.btn.btn-primario {
+    color: var(--primaria);
+    font-size: 24px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid var(--primaria);
+    padding: 10px 20px;
+    text-align: center;
+    transition: ease-in 200ms all;
+}
+
+.btn.btn-primario:hover {
+    border: 1px solid var(--primaria-especial-fraca);
+    color: var(--primaria-especial-fraca);
+}
+
+header.cabecalho .divisoes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px 10%;
+    justify-content: center;
+}
+
+
+header.cabecalho .divisoes .divisao-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10px 20px;
+}
+
+header.cabecalho .divisoes .divisao-logo img {
+    height: 75px;
+    margin-top: 5px;
+}
+
+header.cabecalho .divisoes .divisao-logo span {
+    padding: 0 0 7px 20px;
+    font-size: 48px;
+}
+
+
+header.cabecalho .divisoes .divisao-navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header.cabecalho .divisoes .divisao-navegacao {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.cabecalho .divisoes .divisao-navegacao ul li a.link {
+    color: var(--primaria);
+    text-decoration: none !important;
+    font-size: 25px;
+    transition: ease-in 200ms all;
+}
+
+header.cabecalho .divisoes .divisao-navegacao ul li a.link:hover {
+    color: var(--primaria-especial-fraca);
+}
+
+header.cabecalho .divisao.divisao-contato {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.cabecalho .divisao.divisao-contato a.btn {
+    padding-right: 40px;
+}
+
+
+header.cabecalho .divisao.divisao-contato a.btn::after {
+    font: normal normal normal 14px / 1 FontAwesome;
+    content: "\f1b0";
+    color: var(--primaria);
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    transition: ease-in 200ms all;
+    font-size: 0px;
+}
+
+header.cabecalho .divisao.divisao-contato a.btn:hover::after {
+    font-size: 22px;
+    color: var(--primaria-especial-fraca);
 }
