@@ -96,15 +96,15 @@
                 </div>
                 <div class="statistics">
                     <div class="statistic">
-                        <span>+113</span>
+                        <span aria-value="113">+0</span>
                         <p>animais adotados em 2025</p>
                     </div>
                     <div class="statistic">
-                        <span>+1.2k</span>
+                        <span aria-value="1.2">+0k</span>
                         <p>quilos de ração doadas desde 2015</p>
                     </div>
                     <div class="statistic">
-                        <span>+13k</span>
+                        <span aria-value="13">+0k</span>
                         <p>reais doados</p>
                     </div>
                 </div>
@@ -159,15 +159,6 @@
             </div>
         </section>
     </main>
+    <script src="assets/js/home.js"></script>
 </body>
-<script>
-    function scrollMiddleTestimonialsOnMobile() {
-        const testimonials = document.querySelector('.testimonials .wrapper');
-        testimonials.scrollLeft = (testimonials.scrollWidth - testimonials.clientWidth) / 2;
-    }
-
-    window.addEventListener('load', () => {
-        scrollMiddleTestimonialsOnMobile();
-    });
-</script>
 </html>
