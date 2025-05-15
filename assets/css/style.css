@@ -245,3 +245,30 @@ footer.footer .divisoes .divisao p{
     line-height: 26px;
     text-align: justify;
 }
+
+footer.footer .divisoes .divisao ul li::marker {
+    content: '\f1b0';
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: 25px;
+    color: var(--primaria);
+}
+
+footer.footer .divisoes .divisao ul li a {
+    text-decoration: none;
+    color: var(--primaria);
+    padding-left: 10px;
+}
+
+footer.footer .divisoes .divisao.divisao-redes ul li::marker {
+    content: ''; display: none;
+}
+
+footer.footer .divisoes .divisao.divisao-redes ul li i.fa {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+footer.footer .divisoes ul li {
+    line-height: 30px;
+}
+
