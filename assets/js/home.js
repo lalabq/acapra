@@ -10,12 +10,12 @@ window.addEventListener('load', () => {
 });
 
 /*
-    * Se a div de estatísticas estiver totalmente visível na tela,
-    * executa uma animação em cada estatística numérica, iniciando
-    * ela em 0 e somando de 1 em 1 (ou 0.1 em 0.1 se for decimal)
-    * até chegar no seu valor real. Esta animação só é executada
-    * uma vez enquanto estiver na página.
-    */
+ * Se a div de estatísticas estiver totalmente visível na tela,
+ * executa uma animação em cada estatística numérica, iniciando
+ * ela em 0 e somando de 1 em 1 (ou 0.1 em 0.1 se for decimal)
+ * até chegar no seu valor real. Esta animação só é executada
+ * uma vez enquanto estiver na página.
+ */
 let firstTime = true;
 function statisticsAnimation() {
     const statistics = document.querySelectorAll(".banner-2 .statistic");
