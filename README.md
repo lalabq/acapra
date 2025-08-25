@@ -4,8 +4,9 @@ Site desenvolvido por alunos do curso de Sistemas de Informação da UNIFEBE par
 
 # Alunos
 
-- Andreza Taboni (1ª fase - turma C)
-- Daiana de Souza Alves (1ª fase - turma C)
-- Lavinea Sens (1ª fase - turma C)
-- Victor Hugo Sens (1ª fase - turma C)
-- Ygor Luiz Volstein (1ª fase - turma B)
+- Andreza Taboni (SI02C)
+- Daiana de Souza Alves (SI02C)
+- Emilly Sara Vieira Chagas (SI02B)
+- Lavinea Sens (SI02C)
+- Victor Hugo Sens (SI02C)
+- Ygor Luiz Volstein (SI02B)
